@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 02/03/2014 18:41:16
+EESchema Schematic File Version 2  date 02/03/2014 18:52:32
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:blipr-lib
+LIBS:blipr-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
@@ -62,4 +64,15 @@ Wire Wire Line
 	7000 3200 7000 3550
 Wire Wire Line
 	7000 3550 6000 3550
+$Comp
+L AY-3-8910 U?
+U 1 1 53136FF6
+P 4450 3900
+F 0 "U?" H 4450 3900 60  0000 C CNN
+F 1 "AY-3-8910" H 4450 3900 60  0000 C CNN
+F 2 "~" H 4450 3900 60  0000 C CNN
+F 3 "~" H 4450 3900 60  0000 C CNN
+	1    4450 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
