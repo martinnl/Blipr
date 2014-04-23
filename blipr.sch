@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 02/03/2014 18:52:32
+EESchema Schematic File Version 2  date 02/03/2014 19:15:03
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -46,33 +46,98 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R R?
-U 1 1 53136D33
-P 7000 2950
-F 0 "R?" V 7080 2950 40  0000 C CNN
-F 1 "R" V 7007 2951 40  0000 C CNN
-F 2 "~" V 6930 2950 30  0000 C CNN
-F 3 "~" H 7000 2950 30  0000 C CNN
-	1    7000 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 2700 7000 1950
-Wire Wire Line
-	7000 1950 6150 1950
-Wire Wire Line
-	7000 3200 7000 3550
-Wire Wire Line
-	7000 3550 6000 3550
-$Comp
-L AY-3-8910 U?
+L AY-3-8910 U1
 U 1 1 53136FF6
-P 4450 3900
-F 0 "U?" H 4450 3900 60  0000 C CNN
-F 1 "AY-3-8910" H 4450 3900 60  0000 C CNN
-F 2 "~" H 4450 3900 60  0000 C CNN
-F 3 "~" H 4450 3900 60  0000 C CNN
-	1    4450 3900
+P 6500 3850
+F 0 "U1" H 6500 3850 60  0000 C CNN
+F 1 "AY-3-8910" H 6500 3850 60  0000 C CNN
+F 2 "~" H 6500 3850 60  0000 C CNN
+F 3 "~" H 6500 3850 60  0000 C CNN
+	1    6500 3850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5550 2900 4900 2900
+Wire Wire Line
+	7450 2900 8150 2900
+Entry Wire Line
+	7450 3500 7550 3600
+Wire Bus Line
+	7550 4000 8300 4000
+Entry Wire Line
+	7450 3400 7550 3500
+Entry Wire Line
+	7450 3300 7550 3400
+Entry Wire Line
+	7450 3200 7550 3300
+Entry Wire Line
+	7450 3600 7550 3700
+Entry Wire Line
+	7450 3700 7550 3800
+Entry Wire Line
+	7450 3800 7550 3900
+Entry Wire Line
+	7450 3900 7550 4000
+Wire Bus Line
+	7550 4000 7550 3300
+Entry Wire Line
+	5450 3400 5550 3500
+Entry Wire Line
+	5450 3800 5550 3900
+Entry Wire Line
+	5450 3900 5550 4000
+Entry Wire Line
+	5450 4000 5550 4100
+Entry Wire Line
+	5450 4200 5550 4300
+Entry Wire Line
+	5450 4300 5550 4400
+Entry Wire Line
+	5450 4500 5550 4600
+Entry Wire Line
+	5450 4600 5550 4700
+Entry Wire Line
+	5450 4700 5550 4800
+Wire Bus Line
+	5450 4100 5450 4800
+Wire Bus Line
+	5450 4100 5000 4100
+Wire Bus Line
+	5450 4000 5450 3300
+Wire Bus Line
+	5450 3300 4900 3300
+Entry Wire Line
+	5450 3300 5550 3400
+Entry Wire Line
+	5450 3500 5550 3600
+Entry Wire Line
+	5450 3600 5550 3700
+Entry Wire Line
+	5450 3700 5550 3800
+Entry Wire Line
+	5450 4100 5550 4200
+Entry Wire Line
+	5450 4400 5550 4500
+Wire Wire Line
+	7450 4600 8250 4600
+Wire Wire Line
+	7450 4700 8250 4700
+Wire Wire Line
+	7450 4800 7500 4800
+Wire Wire Line
+	7500 4800 7500 5050
+Wire Wire Line
+	7500 5050 5550 5050
+Wire Wire Line
+	5550 5050 5550 4900
+Entry Wire Line
+	5450 4800 5550 4900
+Wire Wire Line
+	5550 3100 4900 3100
+Wire Wire Line
+	5550 3200 4900 3200
+Wire Wire Line
+	7450 3000 8150 3000
+Wire Wire Line
+	7450 3100 8150 3100
 $EndSCHEMATC

@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 02/03/2014 19:07:31
+
+BeginCmp
+TimeStamp = /53136FF6;
+Reference = U1;
+ValeurCmp = AY-3-8910;
+IdModule  = DIP-40__600;
+EndCmp
+
+EndListe
