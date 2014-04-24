@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 02/03/2014 19:15:03
+EESchema Schematic File Version 2  date 24/04/2014 22:05:26
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
-Date "2 mar 2014"
+Date "24 apr 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -140,4 +140,22 @@ Wire Wire Line
 	7450 3000 8150 3000
 Wire Wire Line
 	7450 3100 8150 3100
+$Sheet
+S 1700 1150 1250 1200
+U 53596A74
+F0 "DCDC5V" 50
+F1 "DCDC5V.sch" 50
+F2 "Vin" B L 1700 1750 60 
+F3 "Vout" B R 2950 1500 60 
+F4 "Gnd" B R 2950 2150 60 
+$EndSheet
+$Sheet
+S 1750 3000 1200 1050
+U 53596A78
+F0 "DCDC33V" 50
+F1 "DCDC33V.sch" 50
+F2 "Vout" B R 2950 3250 60 
+F3 "Vin" B L 1750 3500 60 
+F4 "Gnd" B R 2950 3800 60 
+$EndSheet
 $EndSCHEMATC
