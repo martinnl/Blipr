@@ -1,10 +1,80 @@
-Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 24/04/2014 22:03:04
+Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 25/04/2014 22:21:55
+
+BeginCmp
+TimeStamp = /53596A74/53596AAF;
+Reference = C1;
+ValeurCmp = CP1;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A74/53596AA0;
+Reference = C2;
+ValeurCmp = CP1;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A78/53596D99;
+Reference = C3;
+ValeurCmp = CP1;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A78/53596DA8;
+Reference = C4;
+ValeurCmp = CP1;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A74/53596ABE;
+Reference = D1;
+ValeurCmp = ZENER;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A78/53596DB7;
+Reference = D2;
+ValeurCmp = ZENER;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A74/53596A91;
+Reference = L1;
+ValeurCmp = INDUCTOR;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A78/53596D8A;
+Reference = L2;
+ValeurCmp = INDUCTOR;
+IdModule  = ;
+EndCmp
 
 BeginCmp
 TimeStamp = /53136FF6;
 Reference = U1;
 ValeurCmp = AY-3-8910;
 IdModule  = DIP-40__600;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A74/53596A82;
+Reference = U2;
+ValeurCmp = LM2575S;
+IdModule  = DPAK2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53596A78/53596D7B;
+Reference = U3;
+ValeurCmp = TL2575;
+IdModule  = DPAK2;
 EndCmp
 
 EndListe
