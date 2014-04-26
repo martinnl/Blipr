@@ -1,59 +1,59 @@
-Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 25/04/2014 22:21:55
+Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 26/04/2014 12:27:21
 
 BeginCmp
 TimeStamp = /53596A74/53596AAF;
 Reference = C1;
 ValeurCmp = CP1;
-IdModule  = ;
+IdModule  = SMD403;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A74/53596AA0;
 Reference = C2;
 ValeurCmp = CP1;
-IdModule  = ;
+IdModule  = SMD403;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A78/53596D99;
 Reference = C3;
 ValeurCmp = CP1;
-IdModule  = ;
+IdModule  = SMD403;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A78/53596DA8;
 Reference = C4;
 ValeurCmp = CP1;
-IdModule  = ;
+IdModule  = SMD403;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A74/53596ABE;
 Reference = D1;
 ValeurCmp = ZENER;
-IdModule  = ;
+IdModule  = SM1206POL;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A78/53596DB7;
 Reference = D2;
 ValeurCmp = ZENER;
-IdModule  = ;
+IdModule  = SM1206POL;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A74/53596A91;
 Reference = L1;
 ValeurCmp = INDUCTOR;
-IdModule  = ;
+IdModule  = SELF26;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A78/53596D8A;
 Reference = L2;
 ValeurCmp = INDUCTOR;
-IdModule  = ;
+IdModule  = SELF26;
 EndCmp
 
 BeginCmp
@@ -67,14 +67,28 @@ BeginCmp
 TimeStamp = /53596A74/53596A82;
 Reference = U2;
 ValeurCmp = LM2575S;
-IdModule  = DPAK2;
+IdModule  = DPAK5;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A78/53596D7B;
 Reference = U3;
 ValeurCmp = TL2575;
-IdModule  = DPAK2;
+IdModule  = DPAK5;
+EndCmp
+
+BeginCmp
+TimeStamp = /535B0DBE;
+Reference = U4;
+ValeurCmp = RN42;
+IdModule  = RN-42;
+EndCmp
+
+BeginCmp
+TimeStamp = /535ADBCA;
+Reference = U5;
+ValeurCmp = SN74LVC8T245DGVR;
+IdModule  = SSOP20;
 EndCmp
 
 EndListe

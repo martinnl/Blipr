@@ -407,7 +407,7 @@
   )
 
   (module DIP-40__600 (layer F.Cu) (tedit 200000) (tstamp 535B8979)
-    (at 160 179 270)
+    (at 192 107 270)
     (descr "Module Dil 40 pins, pads ronds, e=600 mils")
     (tags DIL)
     (path /53136FF6)
@@ -561,7 +561,7 @@
   )
 
   (module SSOP20 (layer F.Cu) (tedit 48B5A104) (tstamp 535B896D)
-    (at 198 171 270)
+    (at 230 99 270)
     (descr "SSOP 20 pins")
     (tags "CMS SSOP SMD")
     (path /535ADBCA)
@@ -660,7 +660,7 @@
   )
 
   (module RN-42 (layer F.Cu) (tedit 535AC23D) (tstamp 535B8995)
-    (at 219 176)
+    (at 251 104)
     (path /535B0DBE)
     (fp_text reference U4 (at 0 -1) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
