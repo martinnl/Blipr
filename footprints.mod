@@ -1,43 +1,75 @@
-PCBNEW-LibModule-V1  26/04/2014 13:06:13
+PCBNEW-LibModule-V1  26/04/2014 23:31:14
 # encoding utf-8
 Units mm
 $INDEX
 21DC
+CAP63
 HD3x2SMD
+MCB
 RN-42
 $EndINDEX
 $MODULE 21DC
-Po 0 0 0 15 535B81DD 00000000 ~~
+Po 0 0 0 15 535BD5C9 00000000 ~~
 Li 21DC
 Sc 0
-AR 
+AR /535BB85F
 Op 0 0 0
-T0 0 0 1 1 0 0.15 N V 21 N "21DC"
-T1 0 1.5 1 1 0 0.15 N V 21 N "VAL**"
+T0 0 0 1 1 0 0.15 N V 21 N "K1"
+T1 0 1.5 1 1 0 0.15 N V 21 N "CONN_3"
 $PAD
 Sh "1" R 1 3.5 0 0 0
 Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3 0
+At SMD N 00880001
+Ne 1 "+12V"
+Po 3 0
 $EndPAD
 $PAD
 Sh "2" R 1 3.5 0 0 0
 Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3 0
+At SMD N 00880001
+Ne 2 "DGND"
+Po -3 0
 $EndPAD
 $PAD
 Sh "3" R 3.5 1 0 0 0
 Dr 0 0 0
+At SMD N 00880001
+Ne 0 ""
+Po 0 4.7
+$EndPAD
+$SHAPE3D
+Na "nl_qfn32.wrl"
+Sc 1 10 1.1
+Of 0 0 0.12
+Ro 90 0 0
+$EndSHAPE3D
+$EndMODULE 21DC
+$MODULE CAP63
+Po 0 0 0 15 535C25A0 00000000 ~~
+Li CAP63
+Sc 0
+AR 
+Op 0 0 0
+T0 0 0 1 1 0 0.15 N V 21 N "CAP63"
+T1 0 1.4 1 1 0 0.15 N V 21 N "VAL**"
+DC 0 0 2.4 0 0.15 21
+$PAD
+Sh "2" R 0.75 2.6 0 0 0
+Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 0 -4.7
+Po 0 2.4
 $EndPAD
-$EndMODULE 21DC
+$PAD
+Sh "1" R 0.75 2.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -2.4
+$EndPAD
+$EndMODULE CAP63
 $MODULE HD3x2SMD
-Po 0 0 0 15 535B812A 00000000 ~~
+Po 0 0 0 15 535BDE7F 00000000 ~~
 Li HD3x2SMD
 Sc 0
 AR 
@@ -49,291 +81,309 @@ Sh "1" R 0.74 1.85 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 2.1209 -1.27
+Po 1.27 -2.125
 $EndPAD
 $PAD
 Sh "3" R 0.74 1.85 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 0 -1.27
+Po 0 -2.125
 $EndPAD
 $PAD
 Sh "5" R 0.74 1.85 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -2.1209 -1.27
+Po -1.27 -2.125
 $EndPAD
 $PAD
 Sh "2" R 0.74 1.85 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 2.1209 1.27
+Po 1.27 2.125
 $EndPAD
 $PAD
 Sh "4" R 0.74 1.85 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 0 1.27
+Po 0 2.125
 $EndPAD
 $PAD
 Sh "6" R 0.7366 1.8542 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -2.1209 1.27
+Po -1.27 2.125
 $EndPAD
 $EndMODULE HD3x2SMD
-$MODULE RN-42
-Po 0 0 0 15 535AC23D 00000000 ~~
-Li RN-42
+$MODULE MCB
+Po 0 0 0 15 535C21A3 00000000 ~~
+Li MCB
 Sc 0
 AR 
 Op 0 0 0
-T0 0 -1 1 1 0 0.15 N V 21 N "RN-42"
-T1 0 1 1 1 0 0.15 N V 21 N "VAL**"
-DS -7 9 -7 -15 0.15 21
-DS -7 -15 6 -15 0.15 21
-DS 6 -15 6 9 0.15 21
-DS 6 9 -7 9 0.15 21
+T0 0 0 1 1 0 0.15 N V 21 N "MCB"
+T1 0.2 1.4 1 1 0 0.15 N V 21 N "VAL**"
+DS 9.4 1.6 4 5 0.15 21
+DS -9.4 1.6 -4.2 4.8 0.15 21
+DS -9.4 -1.6 -4.6 -4.4 0.15 21
+DS 9.4 -1.6 4.2 -4.8 0.15 21
+DC 0 0 6.4 0 0.15 21
+$PAD
+Sh "1" R 3 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -8 0
+$EndPAD
+$PAD
+Sh "2" R 3 3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 8 0
+$EndPAD
+$EndMODULE MCB
+$MODULE RN-42
+Po 0 0 0 15 535BFFF1 00000000 ~~
+Li RN-42
+Sc 0
+AR /535B0DBE
+Op 0 0 0
+T0 7 -10.6 1 1 0 0.15 N V 21 N "U4"
+T1 6.8 -12.6 1 1 0 0.15 N V 21 N "RN42"
+DS 6.2 11.4 5.8 11.4 0.15 21
+DS 6 -12.6 6.2 -12.6 0.15 21
+DS -7 11.4 -7 -12.6 0.15 21
+DS -7 -12.6 6 -12.6 0.15 21
+DS 6.2 -12.6 6.2 11.4 0.15 21
+DS 6 11.4 -7 11.4 0.15 21
 $PAD
 Sh "1" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po -7.2 -7
+Ne 6 "DGND"
+Po -7.2 -4.6
 $EndPAD
 $PAD
 Sh "2" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 -5.8
+Po -7.2 -3.4
 $EndPAD
 $PAD
 Sh "3" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 -4.6
+Po -7.2 -2.2
 $EndPAD
 $PAD
 Sh "4" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po -7.2 -3.4
+Ne 6 "DGND"
+Po -7.2 -1
 $EndPAD
 $PAD
 Sh "5" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 -2.2
+Po -7.2 0.2
 $EndPAD
 $PAD
 Sh "6" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 -1
+Po -7.2 1.4
 $EndPAD
 $PAD
 Sh "7" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 0.2
+Po -7.2 2.6
 $EndPAD
 $PAD
 Sh "8" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 1.4
+Po -7.2 3.8
 $EndPAD
 $PAD
 Sh "9" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 2.6
+Po -7.2 5
 $EndPAD
 $PAD
 Sh "10" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -7.2 3.8
+Po -7.2 6.2
 $EndPAD
 $PAD
 Sh "11" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po -7.2 5
+Ne 1 "+3.3V"
+Po -7.2 7.4
 $EndPAD
 $PAD
 Sh "12" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po -7.2 6.2
+Ne 6 "DGND"
+Po -7.2 8.6
 $EndPAD
 $PAD
 Sh "14" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po 6.6 5
+Ne 5 "/TX"
+Po 6.4 7.4
 $EndPAD
 $PAD
 Sh "15" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 3.8
+Po 6.4 6.2
 $EndPAD
 $PAD
 Sh "16" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 2.6
+Po 6.4 5
 $EndPAD
 $PAD
 Sh "17" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 1.4
+Po 6.4 3.8
 $EndPAD
 $PAD
 Sh "18" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 0.2
+Po 6.4 2.6
 $EndPAD
 $PAD
 Sh "19" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po 6.6 -1
+Ne 2 "/PIO2"
+Po 6.4 1.4
 $EndPAD
 $PAD
 Sh "20" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 -2.2
+Po 6.4 0.2
 $EndPAD
 $PAD
 Sh "21" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 -3.4
+Po 6.4 -1
 $EndPAD
 $PAD
 Sh "22" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po 6.6 -4.6
+Ne 3 "/PIO5"
+Po 6.4 -2.2
 $EndPAD
 $PAD
 Sh "23" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 -5.8
+Po 6.4 -3.4
 $EndPAD
 $PAD
 Sh "24" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 6.6 -7
+Po 6.4 -4.6
 $EndPAD
 $PAD
 Sh "13" O 1.3 0.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
-Po 6.6 8.2
+Ne 4 "/RX"
+Po 6.4 8.6
 $EndPAD
 $PAD
 Sh "28" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 2.6 9
+Po 2.8 11.4
 $EndPAD
 $PAD
 Sh "29" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.6 9
+Po -3.4 11.4
 $EndPAD
 $PAD
 Sh "30" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.6 9
+Po 3.8 11.4
 $EndPAD
 $PAD
 Sh "31" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 1.3 9
+Po 1.5 11.4
 $EndPAD
 $PAD
 Sh "32" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 0.1 9
+Po 0.3 11.4
 $EndPAD
 $PAD
 Sh "33" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -1.1 9
+Po -0.9 11.4
 $EndPAD
 $PAD
 Sh "34" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -2.3 9
+Po -2.1 11.4
 $EndPAD
 $PAD
 Sh "35" O 0.8 1.3 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -4.6 9
+Po -4.4 11.4
 $EndPAD
-$SHAPE3D
-Na "nl_qfn32.wrl"
-Sc 2.5 1 4.5
-Of 0 0.1 0.01
-Ro 90 0 0
-$EndSHAPE3D
-$SHAPE3D
-Na "nl_qfn32.wrl"
-Sc 2.5 1 3
-Of 0 0 0.03
-Ro 90 0 0
-$EndSHAPE3D
 $EndMODULE RN-42
 $EndLIBRARY
