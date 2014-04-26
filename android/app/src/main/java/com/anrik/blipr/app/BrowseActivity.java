@@ -28,6 +28,8 @@ import com.google.android.gms.drive.DriveResource.MetadataResult;
 import com.google.android.gms.drive.Metadata;
 import com.google.android.gms.drive.OpenFileActivityBuilder;
 
+import java.io.IOException;
+
 public class BrowseActivity extends Activity implements ConnectionCallbacks,
         OnConnectionFailedListener {
     private static final String TAG = "blipr";
@@ -39,6 +41,7 @@ public class BrowseActivity extends Activity implements ConnectionCallbacks,
 
     private GoogleApiClient mGoogleApiClient;
     private DriveFile mOpenFile;
+    private YmReader mYmReader;
     private DriveId mFileToOpen;
     private Boolean firstOpen = true;
 
@@ -46,7 +49,8 @@ public class BrowseActivity extends Activity implements ConnectionCallbacks,
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browse);
-
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar.setProgress(0);
         // TODO(bluecmd): add retaining fragments for playback data
     }
 
@@ -190,21 +194,37 @@ public class BrowseActivity extends Activity implements ConnectionCallbacks,
                 return;
             }
             showMessage("File contents opened");
-            mOpenFile.getMetadata(mGoogleApiClient).setResultCallback(new
-                    ResultCallback<MetadataResult>() {
-                        @Override
-                        public void onResult(MetadataResult result) {
-                            if (!result.getStatus().isSuccess()) {
-                                showMessage("Problem while trying to fetch metadata");
-                                nowBlipping("???");
-                                return;
-                            }
-                            Metadata metadata = result.getMetadata();
-                            nowBlipping(metadata.getTitle().toUpperCase().replace(".YM" ,""));
-                        }
-                    });
             ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
             progressBar.setProgress(200);
+            try {
+                mYmReader = new YmReader(result.getContents().getInputStream());
+            } catch (IOException ex) {
+                Log.i(TAG, ex.toString());
+                nowBlipping(LBL_ERROR);
+                return;
+            }
+
+            /* If the song doesn't contain a songName, use the filename instead */
+            if (!mYmReader.songName.isEmpty()) {
+                nowBlipping(mYmReader.songName);
+                showMessage("Loaded " + mYmReader.songName + " by " + mYmReader.authorName + ". "
+                        + mYmReader.songComment);
+            } else {
+                mOpenFile.getMetadata(mGoogleApiClient).setResultCallback(
+                        new ResultCallback<MetadataResult>() {
+                            @Override
+                            public void onResult(MetadataResult result) {
+                                if (!result.getStatus().isSuccess()) {
+                                    showMessage("Problem while trying to fetch metadata");
+                                    nowBlipping("???");
+                                    return;
+                                }
+                                Metadata metadata = result.getMetadata();
+                                nowBlipping(metadata.getTitle().toUpperCase().replace(".YM", ""));
+                            }
+                        }
+                );
+            }
         }
     };
 }
