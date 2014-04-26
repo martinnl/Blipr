@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  26/04/2014 11:52:36
+PCBNEW-LibModule-V1  26/04/2014 13:06:13
 # encoding utf-8
 Units mm
 $INDEX
@@ -323,5 +323,17 @@ At SMD N 00888000
 Ne 0 ""
 Po -4.6 9
 $EndPAD
+$SHAPE3D
+Na "nl_qfn32.wrl"
+Sc 2.5 1 4.5
+Of 0 0.1 0.01
+Ro 90 0 0
+$EndSHAPE3D
+$SHAPE3D
+Na "nl_qfn32.wrl"
+Sc 2.5 1 3
+Of 0 0 0.03
+Ro 90 0 0
+$EndSHAPE3D
 $EndMODULE RN-42
 $EndLIBRARY

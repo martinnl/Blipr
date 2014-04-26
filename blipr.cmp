@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 26/04/2014 12:27:21
+Cmp-Mod V01 Created by CvPcb (2013-03-10 BZR 3992)-stable date = 26/04/2014 15:38:49
 
 BeginCmp
 TimeStamp = /53596A74/53596AAF;
@@ -43,17 +43,31 @@ IdModule  = SM1206POL;
 EndCmp
 
 BeginCmp
+TimeStamp = /535BB85F;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = 21DC;
+EndCmp
+
+BeginCmp
 TimeStamp = /53596A74/53596A91;
 Reference = L1;
 ValeurCmp = INDUCTOR;
-IdModule  = SELF26;
+IdModule  = SMDSVP10;
 EndCmp
 
 BeginCmp
 TimeStamp = /53596A78/53596D8A;
 Reference = L2;
 ValeurCmp = INDUCTOR;
-IdModule  = SELF26;
+IdModule  = SMDSVP10;
+EndCmp
+
+BeginCmp
+TimeStamp = /535BB910;
+Reference = P1;
+ValeurCmp = CONN_3X2;
+IdModule  = HD3x2SMD;
 EndCmp
 
 BeginCmp
@@ -89,6 +103,20 @@ TimeStamp = /535ADBCA;
 Reference = U5;
 ValeurCmp = SN74LVC8T245DGVR;
 IdModule  = SSOP20;
+EndCmp
+
+BeginCmp
+TimeStamp = /535BA9DD;
+Reference = U6;
+ValeurCmp = FT231XS;
+IdModule  = SSOP20;
+EndCmp
+
+BeginCmp
+TimeStamp = /535BB5A6;
+Reference = U7;
+ValeurCmp = ATXMEGA8E5;
+IdModule  = TQFP32;
 EndCmp
 
 EndListe

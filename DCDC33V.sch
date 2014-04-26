@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 26/04/2014 12:34:29
+EESchema Schematic File Version 2  date 26/04/2014 16:22:01
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -145,4 +145,10 @@ Vin
 Text HLabel 4500 5000 0    60   BiDi ~ 0
 Gnd
 Connection ~ 4600 5000
+Text Label 5700 4300 0    60   ~ 0
+33Out
+Text Label 5700 4250 0    60   ~ 0
+Out33
+Text Label 5450 4300 0    60   ~ 0
+Out33
 $EndSCHEMATC
